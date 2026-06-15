@@ -1,0 +1,11 @@
+{
+  "name": "skill-cross-treasury",
+  "version": "0.1.0",
+  "description": "CROSS Mainnet treasury planning and gated allocation skill.",
+  "skills": [
+    {
+      "name": "cross-treasury",
+      "path": "skills/cross-treasury"
+    }
+  ]
+}
