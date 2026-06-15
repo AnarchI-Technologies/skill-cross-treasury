@@ -1,18 +1,19 @@
-{
-  "name": "cross-treasury",
-  "version": "0.1.0",
-  "private": true,
-  "type": "module",
-  "description": "CROSS Mainnet treasury policy and guarded allocation driver.",
-  "scripts": {
-    "check": "node --check scripts/_chain.mjs && node --check scripts/_config.mjs && node --check scripts/_json.mjs && node --check scripts/_sibling.mjs && node --check scripts/status.mjs && node --check scripts/risk.mjs && node --check scripts/plan.mjs && node --check scripts/rebalance.mjs && node --check scripts/simulate.mjs",
-    "smoke:read": "node scripts/status.mjs 0x0000000000000000000000000000000000000000 && node scripts/risk.mjs 0x0000000000000000000000000000000000000000 && node scripts/plan.mjs 0x0000000000000000000000000000000000000000 && node scripts/simulate.mjs 100"
-  },
-  "engines": {
-    "node": ">=20"
-  },
-  "dependencies": {
-    "dotenv": "^16.4.5",
-    "viem": "^2.21.0"
-  }
+﻿{
+    "name":  "cross-treasury",
+    "version":  "0.1.0",
+    "private":  true,
+    "type":  "module",
+    "description":  "CROSS Mainnet treasury policy and guarded allocation driver.",
+    "scripts":  {
+                    "check":  "node --check scripts/_chain.mjs \u0026\u0026 node --check scripts/_config.mjs \u0026\u0026 node --check scripts/_json.mjs \u0026\u0026 node --check scripts/_sibling.mjs \u0026\u0026 node --check scripts/status.mjs \u0026\u0026 node --check scripts/risk.mjs \u0026\u0026 node --check scripts/plan.mjs \u0026\u0026 node --check scripts/rebalance.mjs \u0026\u0026 node --check scripts/simulate.mjs",
+                    "smoke:read":  "node scripts/status.mjs 0x0000000000000000000000000000000000000000 \u0026\u0026 node scripts/risk.mjs 0x0000000000000000000000000000000000000000 \u0026\u0026 node scripts/plan.mjs 0x0000000000000000000000000000000000000000 \u0026\u0026 node scripts/simulate.mjs 100"
+                },
+    "engines":  {
+                    "node":  "\u003e=20"
+                },
+    "dependencies":  {
+                         "dotenv":  "^16.4.5",
+                         "viem":  "^2.21.0"
+                     },
+    "license":  "Apache-2.0"
 }
